@@ -1,0 +1,124 @@
+.App {
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 100vh;
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  background-color: rgb(0, 0, 0);
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.my-masonry-grid {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px;
+  /* gutter size offset */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column>div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: grey;
+  margin-bottom: 30px;
+}
+
+.layout-card:hover {
+  border: 1px solid grey;
+  box-shadow: 0 0 10px grey;
+}
+
+/* Images are by default displayed inline - which causes the padding below the image.  */
+img {
+  display: block;
+}
+
+.layout-container {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+.layout-edit-bar {
+  display: flex;
+  margin-top: 2vh;
+  position: fixed;
+  right: 0; 
+}
+
+.layout-btn {
+  margin-right: 2vh;
+  cursor:pointer;
+}
+
+.layout-header {
+  padding: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.profile-header-text {
+  margin: 0 auto;
+  max-width: 80%;
+  word-wrap: break-word;
+  outline: 1px solid white;
+}
+
+.profile-header-text h4 {
+  padding: 2vh;
+}
+
+.layout-header p {
+  font-size: 2vh;
+}
+
+input {
+  border: 0;
+  background-color: transparent;
+  border-bottom: 0.5px solid grey;
+  box-shadow: none;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.content-text{
+  padding: 2vh;
+  font-size: 2vh; 
+}
+
+@media only screen and (min-width: 700px) {
+  
+  .profile-header-text {
+    max-width: 40vw;
+  }
+}

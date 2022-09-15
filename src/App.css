@@ -111,6 +111,14 @@ input:focus {
   outline: none;
 }
 
+.content-photo{
+  margin: 0 auto; 
+  height: auto; 
+  width: 100%; 
+  background-size: cover;
+  object-fit: cover;
+}
+
 .content-text{
   padding: 2vh;
   font-size: 2vh; 

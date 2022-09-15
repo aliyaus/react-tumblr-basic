@@ -5,14 +5,8 @@ function ContentCard({ item }) {
     return (
         <div className="layout-card" style={{ backgroundColor: 'transparent', objectFit: 'cover' }}>
             {
-                type === "photo" ? <img src={image} style={{
-                    margin: '0 auto',
-                    height: 'auto', width: '100%',
-                    backgroundSize: 'cover',
-                    objectFit: 'cover'
-                }} /> :
-                    type === "text" ?
-                        <div className="content-text">{text}</div> : ''
+                type === "photo" ? <img src={image} className="content-photo" /> :
+                    type === "text" ? <div className="content-text">{text}</div> : ''
             }
         </div>
     )

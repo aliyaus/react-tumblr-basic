@@ -16,12 +16,7 @@ function NoMatch() {
                 textAlign: 'center',
             }}>
             <p> can't find what you're looking for right now/:</p>
-            <img src={nomatch_gif} style={{
-                margin: '0 auto',
-                height: 'auto', width: '100%',
-                backgroundSize: 'cover',
-                objectFit: 'cover'
-            }} />
+            <img src={nomatch_gif} className="content-photo" />
             <div
                 onClick={() => navigate("/")}>
                 return home

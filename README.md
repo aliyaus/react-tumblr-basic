@@ -1,7 +1,7 @@
 # react tumblr basic
 
 a very simple react app that displays a tumblr profile page that uses masonry ui design to display posts & allows search/filtering on content tags.
-this project will be progressively added on to include features such as database connection, account setup & managemnent, posting, ect. 
+this project will be progressively added on to include features such as database connection, account setup & management, posting, ect. 
 
 # Key Concepts
 
